@@ -190,7 +190,8 @@ def copytree(src, dst, **kwargs):
     if path.isdir(name):
       mkdir(target)
     else:
-      copy(name, target)
+      if os.path.exists(name):
+        copy(name, target)
 
 
 @fill_in_args
