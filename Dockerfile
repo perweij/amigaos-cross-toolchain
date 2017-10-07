@@ -16,7 +16,7 @@ RUN apt-get --no-install-recommends -y install bison git gperf python2.7-dev pyt
 
 
 # extra development tools
-RUN apt-get --no-install-recommends -y install build-essential fs-uae gettext python2.7 lhasa
+RUN apt-get --no-install-recommends -y install build-essential fs-uae gettext python2.7 lhasa libgl1-mesa-dri
 
 
 WORKDIR /usr/local/src
